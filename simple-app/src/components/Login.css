@@ -1,0 +1,164 @@
+/* Background white */
+:root {
+    --bg1: #e8eaec;
+    --text-color: #979797;
+    --color: #000;
+    --tcolor: rgb(119 119 119);
+  
+    --boxShadow: 7px 7px 15px #45566754, -8px -8px 15px rgb(81 101 121 / 4%),
+      inset -5px -4px 13px 0px rgb(81 101 121 / 35%),
+      inset 6px 7px 12px 0px rgb(255 255 255 / 94%);
+  
+    --boxShadow2: inset 4px 4px 8px rgb(189 200 213),
+      inset -4px -4px 8px rgb(255 255 255);
+  
+    --boxShadow3: inset 4px 4px 8px rgb(189 200 213),
+      inset -4px -4px 8px rgb(255 255 255);
+  
+    --sbShadow: 5px 5px 7px rgb(0 0 0 /25%),
+      inset 2px 2px 5px rgb(255 255 255 / 25%),
+      inset -3px -3px 5px rgb(0 0 0 / 12%);
+  }
+  
+  /* Background dark */
+  body.dark {
+    --bg1: #2f363e;
+    --text-color: rgb(255 208 0);
+    --color: #fff;
+    --tcolor: rgb(36, 6, 6);
+  
+    --boxShadow: 5px 5px 15px rgb(0, 0, 0, 0.25), 5px 15px 15px rgb(0, 0, 0, 0.25),
+      inset 5px 5px 10px rgb(0, 0, 0, 0.5),
+      inset 5px 5px 20px rgb(255, 255, 255, 0.2),
+      inset -5px -5px 15px rgb(0, 0, 0, 0.75);
+  
+    --boxShadow2: inset -3px -3px 6px rgb(73, 78, 83),
+      inset 3px 3px 6px rgb(32, 28, 28);
+  
+    --boxShadow2: -3px -3px 6px rgb(73, 78, 83), 3px 3px 6px rgb(32, 28, 28);
+  
+    --sbShadow: 5px 5px 7px rgb(0 0 0 /25%),
+      inset 2px 2px 5px rgb(255 255 255 / 25%),
+      inset -3px -3px 5px rgb(0 0 0 / 12%);
+  }
+  
+  /* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+  } */
+  
+  /* html,
+  body {
+    height: 100%;
+  } */
+  
+  .body-content {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background: var(--bg1);
+    min-height: 100vh;
+  }
+  
+  .content {
+    width: 385px;
+    background: var(--bg1);
+    box-shadow: var(--boxShadow);
+    border-radius: 20px;
+    padding: 60px 40px;
+    margin-top: 45px;
+    
+  }
+  
+  .content .text {
+    font-size: 33px;
+    font-size: 600;
+    margin-bottom: 35px;
+    color: var(--color);
+  }
+  
+  .content .field {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+  
+  .field input {
+    height: 40px;
+    width: 100%;
+    padding-left: 50px;
+    font-size: 15px;
+    outline: none !important;
+    border: none;
+    background: var(bg1);
+    box-shadow: var(--boxShadow2);
+    border-radius: 25px;
+  }
+  
+  input:focus {
+    box-shadow: var(--boxShadow);
+  }
+  ::placeholder {
+    color: var(--tcolor);
+  }
+  
+  .field:nth-child(2) {
+    margin-top: 20px;
+  }
+  
+  .field:nth-child(3) {
+    margin-top: 20px;
+  }
+  
+  .field span {
+    position: absolute;
+    width: 50px;
+    line-height: 50px;
+    color: var(--tcolor);
+    font-size: 22px;
+  }
+  
+  button {
+    margin: 25px 0;
+    width: 80px;
+    height: 40px;
+    color: var(--color);
+    font-size: 18px;
+    font-weight: 600;
+    background: var(--bg1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: var(--boxShadow);
+    border-radius: 25px;
+  }
+  
+  button:focus {
+    color: #ff6100;
+    box-shadow: var(--boxShadow2);
+  }
+  
+  h4 {
+    font-size: 14px;
+    color: rgb(119 119 119);
+    margin: 0 0 16px 0;
+  }
+  
+  .foot {
+    margin: 20px auto;
+    color: rgb(119 119 119);
+  }
+  
+  .in {
+    color: #ff6100;
+    text-decoration: none;
+  }
+  
+  .in:hover {
+    text-decoration: underline;
+  }
+
+  

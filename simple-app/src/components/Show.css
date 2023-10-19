@@ -1,0 +1,37 @@
+.trending {
+    margin-right: 35px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 2px white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* background-color: #2d2d2d; */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+
+@media (max-width: 768px) {
+    .trending {
+      font-size: 18px;
+      margin-right: 60px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .trending {
+      font-size: 15px; 
+      margin-right: 25px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .trending {
+      font-size: 12px; 
+      margin-right: 10px;
+    }
+  }
